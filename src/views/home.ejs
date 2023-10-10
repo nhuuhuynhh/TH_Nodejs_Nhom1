@@ -1,14 +1,21 @@
-<%- include('header') %>
+
+    <%- include('header') %>
+    <!-- <h1 style="margin-top: 0px;margin-bottom: 0px;height: 100px;background: white;border: 1px solid black;">Homee</h1> -->
+<!--     
+    kiem tra page co ton tai trong req o controller hay khong
+    neu page co ton tai thi khi tim tren url
+    neu co ton tai thi khi goi den url thi chi render ra page tuong ung  -->
+
+    <div class="container" style="height: 300px; height: 650px;">
+       
+        <% if (data.page) { %>
+            <%- include(data.page); -%>
+        <% } %>
+    </div>
+
+    <%- include('footer') %>
 
 
-<div style="border: solid black 1px;height: 700px;"  >
-    <% if (data.page) { %>
-
-        <%- include(data.page); -%>
-        
-    <% } %>
     
-</div>
 
 
-<%- include('footer') %>

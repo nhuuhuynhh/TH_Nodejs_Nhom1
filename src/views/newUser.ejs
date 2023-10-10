@@ -1,28 +1,37 @@
 <h1><%=data.title%></h1>
-<form>
+
+<form action="/insert-new-user" method="POST">
   <div class="mb-3">
-      <label for="accountName" class="form-label">Account name</label>
-      <input type="text" name="accountName" class="form-control" id="accountName">
+      <label for="accountName" class="form-label">username</label>
+      <input type="text" name="username" class="form-control" id="accountName">
     </div>
   <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" name="name" class="form-control" id="email">
+    <label for="email" class="form-label">password</label>
+    <input type="text" name="password" class="form-control" id="email">
   </div>
   <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" name="password" class="form-control" id="password">
+    <label for="password" class="form-label">fullname</label>
+    <input type="text" name="fullname" class="form-control" id="password">
   </div>
   <div class="mb-3">
-      <label for="gender" class="form-label">Gender</label>
-      <input type="text" name="gender" class="form-control" id="gender">
+      <label for="gender" class="form-label">address</label>
+      <input type="text" name="address" class="form-control" id="gender">
     </div>
+
     <div class="mb-3">
-      <label for="address" class="form-label">Address</label>
-      <input type="text" name="address" class="form-control" id="address">
+      <label for="email" class="form-label">sex</label>
+      <input type="number" name="sex" class="form-control" id="email">
     </div>
+
     <div class="mb-3">
-      <label for="role" class="form-label">role</label>
-      <input type="text" name="role" class="form-control" id="role">
+      <label for="email" class="form-label">gmail</label>
+      <input type="text" name="gmail" class="form-control" id="email">
     </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">groupid</label>
+      <input type="text" value="1" hidden name="groupid" class="form-control" id="email">
+    </div>
+   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
